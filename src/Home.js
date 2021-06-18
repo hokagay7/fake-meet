@@ -26,7 +26,7 @@ class Home extends Component {
 	render() {
 		return (
 			<div className="container2">
-				<div style={{fontSize: "14px", background: "#729672", width: "10%", textAlign: "center"}}>
+				<div style={{fontSize: "14px", background: "#729672", width: "10%", textAlign: "center", margin: "auto", marginBottom: "10px"}}>
 					Hosted by: 
 					<IconButton style={{color: "black"}} onClick={() => window.location.href="https://github.com/hokagay7"}>
 						<GitHubIcon />
@@ -40,7 +40,7 @@ class Home extends Component {
 
 				<div style={{
 					background: "#729672", width: "30%", height: "auto", padding: "20px", minWidth: "400px",
-					textAlign: "center"
+					textAlign: "center", margin: "auto", marginTop: "100px"
 				}}>
 					<p style={{ margin: 0, fontWeight: "bold", paddingRight: "50px" }}>Create or join a meet</p>
 					<Input placeholder="Code or URL" onChange={e => this.handleChange(e)} />
