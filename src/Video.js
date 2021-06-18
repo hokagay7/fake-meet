@@ -445,9 +445,9 @@ class Video extends Component {
 	render() {
 		if(this.isChrome() === false){
 			return (
-				<div style={{background: "white", width: "30%", height: "auto", padding: "20px", minWidth: "400px",
+				<div style={{background: "#729672", width: "30%", height: "auto", padding: "20px", minWidth: "400px",
 						textAlign: "center", margin: "auto", marginTop: "50px", justifyContent: "center"}}>
-					<h1>Sorry, this works only with Google Chrome</h1>
+					<h1>Guna Google Chrome. Pandai2 la ko kekw</h1>
 				</div>
 			)
 		}
@@ -455,16 +455,16 @@ class Video extends Component {
 			<div>
 				{this.state.askForUsername === true ?
 					<div>
-						<div style={{background: "white", width: "30%", height: "auto", padding: "20px", minWidth: "400px",
+						<div style={{background: "#729672", width: "30%", height: "auto", padding: "20px", minWidth: "400px",
 								textAlign: "center", margin: "auto", marginTop: "50px", justifyContent: "center"}}>
-							<p style={{ margin: 0, fontWeight: "bold", paddingRight: "50px" }}>Set your username</p>
+							<p style={{ margin: 0, fontWeight: "bold", paddingRight: "50px" }}>Letak Username</p>
 							<Input placeholder="Username" value={this.state.username} onChange={e => this.handleUsername(e)} />
 							<Button variant="contained" color="primary" onClick={this.connect} style={{ margin: "20px" }}>Connect</Button>
 						</div>
 
 						<div style={{ justifyContent: "center", textAlign: "center", paddingTop: "40px" }}>
 							<video id="my-video" ref={this.localVideoref} autoPlay muted style={{
-								borderStyle: "solid",borderColor: "#bdbdbd",objectFit: "fill",width: "60%",height: "30%"}}></video>
+								borderStyle: "solid",borderColor: "#1f1f1f",objectFit: "fill",width: "60%",height: "30%"}}></video>
 						</div>
 					</div>
 					:
