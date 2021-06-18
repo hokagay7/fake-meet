@@ -516,7 +516,7 @@ class Video extends Component {
 							<div style={{ paddingTop: "20px" }}>
 								<Input value={window.location.href} disable="true"></Input>
 								<Button style={{backgroundColor: "#3f51b5",color: "#4a7d4a",marginLeft: "20px",
-									marginTop: "10px",width: "120px",fontSize: "30px"
+									marginTop: "10px",width: "120px",fontSize: "10px"
 								}} onClick={this.copyUrl}>Copy invite link</Button>
 							</div>
 
